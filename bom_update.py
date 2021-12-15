@@ -8,7 +8,7 @@ def main(bom_single_path: str, bom_hier_path: str):
     bom_single = pd.read_excel(bom_single_path, header=1)
     bom_hier = pd.read_excel(bom_hier_path, header=1)
     # columns to update
-    update_columns = ['In stock', 'Besteld', 'Status', 'Besteldatum', 'Leveringsdatum']
+    update_columns = ['In stock', 'Besteld', 'Status', 'Besteldatum', 'Leveringsdatum', 'Palletnr.']
     # columns to check
     columns = ['Component', 'Component description', 'PartNumber', 'Size', 'Length', 'Diameter', 'Thickness']
 
