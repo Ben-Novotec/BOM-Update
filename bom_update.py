@@ -45,7 +45,7 @@ def main(bom_old_path: str, bom_new_path: str):
                 list_update_rows.append(row_series)
 
     df_update = pd.DataFrame(list_update_rows, index=range(len(list_update_rows)))
-    df_update.to_excel('result.xlsx', index=False, startrow=1)
+    df_update.to_excel(f'{bom_old_path[:-5]} - Revisie.xlsx', index=False, startrow=1)
 
 
 if __name__ == '__main__':
