@@ -13,9 +13,9 @@ MDBoxLayout:
             cols: 2
 
             MDLabel:
-                id: lab_single
+                id: lab_old
                 halign: 'center'
-                text: 'Select a single component bom list:'
+                text: 'Select the old bom list:'
                 # md_bg_color: app.theme_cls.primary_color
 
             MDRelativeLayout:
@@ -23,10 +23,10 @@ MDBoxLayout:
                     text: 'Browse'
                     icon: 'folder'
                     pos_hint: {'center_x': .3, 'center_y': .5}
-                    on_press: app.set_bom_single_path()
+                    on_press: app.set_bom_old_path()
 
         MDLabel:
-            id: lab_single_path
+            id: lab_old_path
             halign: 'center'
             size_hint_y: .5
             text: ''
@@ -37,19 +37,19 @@ MDBoxLayout:
             cols: 2
 
             MDLabel:
-                id: lab_hier
+                id: lab_new
                 halign: 'center'
-                text: 'Select a hierarchical bom list:'
+                text: 'Select the new bom list:'
 
             MDRelativeLayout:
                 MDRoundFlatIconButton:
                     text: 'Browse'
                     icon: 'folder'
                     pos_hint: {'center_x': .3, 'center_y': .5}
-                    on_press: app.set_bom_hier_path()
+                    on_press: app.set_bom_new_path()
 
         MDLabel:
-            id: lab_hier_path
+            id: lab_new_path
             halign: 'center'
             size_hint_y: .5
             text: ''
